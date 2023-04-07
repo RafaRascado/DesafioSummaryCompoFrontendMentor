@@ -104,7 +104,10 @@ body {
     list-style: none;
 }
 
-.list-itens {
+.list-itens-1,
+.list-itens-2,
+.list-itens-3,
+.list-itens-4 {
     margin-top: 40px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
@@ -114,6 +117,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.list-itens-1 .itens,
+.list-itens-2 .itens,
+.list-itens-3 .itens,
+.list-itens-4 .itens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.list-itens-1 .span-itens,
+.list-itens-2 .span-itens,
+.list-itens-3 .span-itens,
+.list-itens-4 .span-itens {
+    margin-left: 155px;
+    color: black;
 }
 
 .box-direito .button {
@@ -130,7 +151,7 @@ body {
     font-size: 26px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 920px) {
 
     body {
         background-color: hsl(0, 0%, 100%);
@@ -202,7 +223,7 @@ body {
         color: rgb(184, 184, 184);
     }
 
- 
+
     .final-box p {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -247,7 +268,10 @@ body {
         flex-direction: column;
     }
 
-    .list-itens {
+    .list-itens-1,
+    .list-itens-2,
+    .list-itens-3,
+    .list-itens-4 {
         margin-right: 30px;
         margin-top: 25px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -257,6 +281,189 @@ body {
         height: 3em;
         display: flex;
         align-items: center;
+    }
+
+    .list-itens-1 .itens,
+    .list-itens-2 .itens,
+    .list-itens-3 .itens,
+    .list-itens-4 .itens {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5px;
+    }
+
+    .list-itens-1 .span-itens,
+    .list-itens-2 .span-itens,
+    .list-itens-3 .span-itens,
+    .list-itens-4 .span-itens {
+        margin-left: 80px;
+        color: black;
+    }
+
+    .box-direito .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 48px;
+        text-align: center;
+        width: 12em;
+        border-radius: 1.5em;
+        height: 2em;
+        color: white;
+        background-color: hsl(241, 95%, 59%, 1);
+        font-size: 26px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: hsl(0, 0%, 100%);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0px;
+    }
+
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .box {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 34em;
+        border-radius: 1.3em;
+        background-color: hsl(241, 81%, 54%, 1.10);
+
+    }
+
+    .box p {
+        font-size: 1.8em;
+        font-weight: 600;
+        color: hsl(0, 0%, 100%);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .nivel-box {
+        width: 100%;
+        display: flex;
+        margin-top: 5%;
+        justify-content: center;
+    }
+
+    .nivel-box-inferior {
+        border-radius: 50%;
+        width: 15em;
+        height: 15em;
+        background-color: hsla(241, 72%, 46%, 1);
+    }
+
+    .nivel-box-inferior p {
+        margin-top: 50px;
+        margin-bottom: 0;
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 75px;
+        font-weight: 700;
+        color: white;
+    }
+
+    .nivel-box span {
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(184, 184, 184);
+    }
+
+
+    .final-box p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    .final-box span {
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.1em;
+        font-weight: 600;
+        color: rgb(184, 184, 184);
+    }
+
+
+    .box-direito {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 37em;
+        border-radius: 1em;
+        background-color: hsl(0, 0%, 97%, 0.85);
+
+    }
+
+    .box-direito p {
+        margin-left: 0px;
+        font-size: 1.4em;
+        font-weight: 600;
+        color: black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-itens-1,
+    .list-itens-2,
+    .list-itens-3,
+    .list-itens-4 {
+        margin-right: 30px;
+        margin-top: 25px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+        border-radius: 0.8em;
+        width: 18em;
+        height: 3em;
+        display: flex;
+        align-items: center;
+    }
+
+    .list-itens-1 .itens,
+    .list-itens-2 .itens,
+    .list-itens-3 .itens,
+    .list-itens-4 .itens {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5px;
+    }
+
+    .list-itens-1 .span-itens,
+    .list-itens-2 .span-itens,
+    .list-itens-3 .span-itens,
+    .list-itens-4 .span-itens {
+        margin-left: 80px;
+        color: black;
     }
 
     .box-direito .button {
@@ -274,7 +481,7 @@ body {
     }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 320px) {
     body {
         background-color: hsl(0, 0%, 100%);
         width: 100%;
@@ -282,7 +489,6 @@ body {
         display: flex;
         margin: 0px;
     }
-
 
     .container {
         width: 100%;
@@ -345,7 +551,7 @@ body {
         color: rgb(184, 184, 184);
     }
 
- 
+
     .final-box p {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -390,16 +596,36 @@ body {
         flex-direction: column;
     }
 
-    .list-itens {
-        margin-right: 30px;
+    .list-itens-1,
+    .list-itens-2,
+    .list-itens-3,
+    .list-itens-4 {
         margin-top: 25px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 18px;
         border-radius: 0.8em;
-        width: 18em;
+        width: 14em;
         height: 3em;
         display: flex;
         align-items: center;
+    }
+
+    .list-itens-1 .itens,
+    .list-itens-2 .itens,
+    .list-itens-3 .itens,
+    .list-itens-4 .itens {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5px;
+    }
+
+    .list-itens-1 .span-itens,
+    .list-itens-2 .span-itens,
+    .list-itens-3 .span-itens,
+    .list-itens-4 .span-itens {
+        margin-left: 80px;
+        color: black;
     }
 
     .box-direito .button {
@@ -408,7 +634,7 @@ body {
         align-items: center;
         margin-top: 48px;
         text-align: center;
-        width: 12em;
+        width: 8.5em;
         border-radius: 1.5em;
         height: 2em;
         color: white;
